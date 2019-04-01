@@ -25,7 +25,6 @@ export default class Body extends Component {
     }
   }
   componentWillReceiveProps(props){
-    console.log('props getting updated', props);
     if(props.userData.length > 10) {
       let addValue = [];
       for (let i = 0; i < count; i++) {

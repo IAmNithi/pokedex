@@ -20,7 +20,7 @@ export default class Card extends Component {
                 <div>HP: {this.state.cardData.base['HP']}</div>
               </div>
               <div className="card-footer text-center">
-                <button className="btn btn-primary">Edit</button>
+                <a className="btn btn-pokemon" href={'https://www.google.com/search?query='+this.state.cardData.name['english']} target="_blank" rel="noopener noreferrer">Know More</a>
               </div>
             </div>
           </div>

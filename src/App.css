@@ -42,33 +42,54 @@
 }
 .btn-custom{
   color: #fff !important;
-  background-color: #1c2938 !important;
-  border-color: #1c2938 !important;
-  width: 250px !important;
+  background-color: #6772e5 !important;
+  border-color: #6772e5 !important;
+  border-radius: 0 !important;
+  width: 200px !important;
+  -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
 }
 .btn-custom:hover{
   color: #fff !important;
-  background-color: #1c2938 !important;
-  border-color: #1c2938 !important;
+  background-color: #6772e5 !important;
+  border-color: #6772e5 !important;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+  box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+  -webkit-box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+.btn-common{
+  color: #6772e5 !important;
+  background-color: #fff !important;
+  border-color: #fff !important;
+  border-radius: 0 !important;
+  width: 200px !important;
+  -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+.btn-common:hover{
+color: #6772e5 !important;
+background-color: #fff !important;
+border-color: #fff !important;
+-webkit-transform: translateY(-1px);
+transform: translateY(-1px);
+-webkit-box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+-webkit-box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }
 
 /* body css */
-.loader{
-  background: url(https://assets.pokemon.com/static2/_ui/img/chrome/loaders/pokeball_gray.png) center center no-repeat;
-    background-size: 32px 32px;
-    width: 32px;
-    height: 32px;
-    position: relative;
-    left: 48%;
-    top: 20%;
-    -webkit-animation: loader .5s infinite;
-    -ms-animation: loader .5s infinite;
-    -moz-animation: loader .5s infinite;
-    -o-animation: loader .5s infinite;
-    animation: loader .5s infinite;
-}
 .btn-large{
   width: 280px;
+  border-radius: 0 !important;
 }
 
 /* card css */
@@ -130,4 +151,15 @@
   padding-right: 10px;
   margin-bottom: 15px;
   border-radius: 20px;
+}
+.btn-pokemon{
+  color: #fff !important;
+  background-color: #58585A !important;
+  border-color: #58585A !important;
+  border-radius: 0 !important;
+}
+.btn-pokemon:hover{
+  color: #fff !important;
+  background-color: #58585A !important;
+  border-color: #58585A !important;
 }

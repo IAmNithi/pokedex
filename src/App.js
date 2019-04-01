@@ -18,7 +18,6 @@ class App extends Component {
     this.setState({
       serviceData: []
     }, function() {
-    console.log('printing the event', e);
     if (e.length !== 0) {
         const enteredValue = e.toLowerCase();
         const presentValue = data.filter(function(da) {
