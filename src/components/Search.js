@@ -22,13 +22,15 @@ export default class Search extends Component {
       this.props.onSubmit(this.state.searchParam);
     });
   }
+  emitOpenModal(){
+    this.props.openModal('new');
+  }
   render() {
     return (
       <div className="search-header">
   <div className="container text-center">
   <div className="row">
-  <div className="col-md-1"></div>
-    <div className="col-md-4">
+    <div className="col-md-3">
       <input type="text" onChange={(e) => this.changeEvent(e)} className="form-control" placeholder="Search PokeMon" />
     </div>
     <div className="col-md-3">
@@ -37,7 +39,9 @@ export default class Search extends Component {
     <div className="col-md-3">
       <button className="btn btn-common" onClick={(e) => this.emitReset(e)}>Reset</button>
     </div>
-  <div className="col-md-1"></div>
+  <div className="col-md-3">
+    <button className="btn btn-pokemon" onClick={(e) => this.emitOpenModal(e)}>Add New PokeMon</button>
+  </div>
   </div>
   </div>
 </div>

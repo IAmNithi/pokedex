@@ -8,6 +8,7 @@ export default class Body extends Component {
       userList: props.userData,
       moreUserList: []
     };
+    this.openModal = this.openModal.bind(this);
   }
   componentWillMount() {
     if(this.state.userList.length > 10) {
@@ -39,9 +40,12 @@ export default class Body extends Component {
       });
     }
   }
+  openModal(e, data){
+    this.props.openModal(e, data);
+  }
   renderCard(idx, item) {
     return <div className="col-md-4" key={idx}>
-      <Card items={item} />
+      <Card items={item} openModal={this.openModal}/>
     </div>;
   }
   addMore() {
